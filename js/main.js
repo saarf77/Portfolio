@@ -35,7 +35,6 @@ function renderProject(project) {
         </div>
         <img class="img-fluid" src="img/portfolio/${project.id}.jpg" alt="">
         <img class="img-fluid" src="img/portfolio/${project.id}.png" alt="">
-
     </a>
     <div class="portfolio-caption">
         <h4>${project.name}</h4>
@@ -52,6 +51,7 @@ function renderModal() {
                 <h2>${project.name}</h2>
                 <p class="item-intro text-muted">${project.title}</p>
                 <a target="_blank" href="${project.url}"><img class="img-fluid d-block mx-auto" src="img/portfolio/${project.id}.png" alt=""></a>
+
                 <p>${project.desc}</p>
                 <ul class="list-inline">
                   <li>Date: ${project.publishedAt}</li>
@@ -64,3 +64,4 @@ function renderModal() {
   $('.modal-body').html(strHTML)
 }
 
+                // <video autoplay controls  width="100%"  > <source src="/img/portfolio/${project.id}.webm " type="video/webm"> </video>
